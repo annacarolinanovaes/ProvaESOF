@@ -50,7 +50,7 @@ public class Testes {
 		
 		Pessoa proximo = f.proximoFila();
 		
-	Assert.assertEquals(proximo.getNome(), "Fulana");
+		Assert.assertEquals(proximo.getNome(), "Fulana");
 		
 		f.removePessoa(proximo);
 		proximo = f.proximoFila();
