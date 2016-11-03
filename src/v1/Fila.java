@@ -19,8 +19,13 @@ public class Fila {
 		
 		proximo = verificaGravida();
 		
-		if(proximo == null)
-			proximo = pessoas.get(0);
+		if(proximo == null){
+			proximo = verificaIdoso();
+			if(proximo == null){
+				proximo = pessoas.get(0);
+			}
+	
+		}
 		
 		return proximo;
 	}
